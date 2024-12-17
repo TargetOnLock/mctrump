@@ -98,3 +98,10 @@ footer a {
 footer a:hover {
   color: var(--secondary-color);
 }
+
+/* Ensure anchor tags are clickable */
+a {
+  position: relative; /* Ensure they are positioned correctly */
+  z-index: 2; /* Bring them above other elements */
+  display: inline-block; /* Ensure they behave like block elements */
+}

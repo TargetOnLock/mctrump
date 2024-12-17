@@ -5,13 +5,15 @@ export default function Home() {
     <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       {/* Hero Section */}
       <section className="bg-yellow-400 p-10 text-center w-full rounded-lg shadow-lg">
-        <Image
-          src="/mctrump.png"
-          alt="McTrump Logo"
-          width={400}
-          height={400}
-          className="mb-4 mx-auto"
-        />
+        <a href="https://mctrump.meme" target="_blank" rel="noopener noreferrer">
+          <Image
+            src="/mctrump.png"
+            alt="McTrump Logo"
+            width={400}
+            height={400}
+            className="mb-4 mx-auto"
+          />
+        </a>
         <h1 className="text-5xl font-bold text-red-600">Welcome to McTrump On Base (MTOB)</h1>
         <p className="mt-4 text-lg text-red-600">The token that delivers fun, rewards, and sustainability on the Base Chain.</p>
         <button className="mt-6 bg-secondary-color text-white py-2 px-4 rounded hover:bg-red-600 transition duration-300">Join the Movement</button>
@@ -132,7 +134,7 @@ export default function Home() {
             <Image src="/dextools.png" alt="Dextools" width={150} height={150} />
           </a>
           <a href="https://basescan.org/" target="_blank" rel="noopener noreferrer">
-            <Image src="https://basescan.org/favicon.ico" alt="Basescan" width={150} height={150} />
+            <Image src="/basescan.png" alt="Basescan" width={150} height={150} />
           </a>
           <a href="https://coinmarketcap.com/" target="_blank" rel="noopener noreferrer">
             <Image src="https://coinmarketcap.com/favicon.ico" alt="CoinMarketCap" width={150} height={150} />
@@ -140,7 +142,6 @@ export default function Home() {
           <a href="https://www.coingecko.com/" target="_blank" rel="noopener noreferrer">
             <Image src="https://www.coingecko.com/favicon.ico" alt="CoinGecko" width={150} height={150} />
           </a>
-          
         </div>
       </section>
 
