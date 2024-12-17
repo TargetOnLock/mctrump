@@ -3,19 +3,98 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #ffffff;
+  --primary-color: rgba(255, 204, 0, 0.9);
+  --overlay-color: rgba(0, 0, 0, 0.4);
+  --secondary-color: #c70000;
+  --accent-color: #0072c6;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: url('/background.jpg') no-repeat center center fixed;
+  background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+section {
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  margin: 20px;
+}
+
+section.bg-yellow-400 {
+  background-color: var(--primary-color);
+}
+
+section.bg-gray-100 {
+  background-color: var(--primary-color);
+}
+
+section.bg-white {
+  background-color: var(--primary-color);
+}
+
+section.bg-gray-200 {
+  background-color: var(--primary-color);
+}
+
+section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--overlay-color);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+button {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+button:hover {
+  background-color: #a60000;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+footer a {
+  color: var(--foreground);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--secondary-color);
 }

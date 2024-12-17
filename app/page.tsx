@@ -2,98 +2,194 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      {/* Hero Section */}
+      <section className="bg-yellow-400 p-10 text-center w-full rounded-lg shadow-lg">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src="/mctrump.png"
+          alt="McTrump Logo"
+          width={400}
+          height={400}
+          className="mb-4 mx-auto"
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+        <h1 className="text-5xl font-bold text-red-600">Welcome to McTrump On Base (MTOB)</h1>
+        <p className="mt-4 text-lg text-red-600">The token that delivers fun, rewards, and sustainability on the Base Chain.</p>
+        <button className="mt-6 bg-secondary-color text-white py-2 px-4 rounded hover:bg-red-600 transition duration-300">Join the Movement</button>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+        {/* Footer-like Section Under Hero */}
+        <div className="flex gap-6 flex-wrap items-center justify-center mt-10 bg-gray-800 text-white p-4 rounded-lg">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="mailto:info@mctrump.meme"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              aria-hidden
+              src="/file.svg"
+              alt="Email icon"
+              width={16}
+              height={16}
             />
-            Deploy now
+            Email Us
           </a>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://t.me/OfficialMcTrump"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Read our docs
+            <Image
+              aria-hidden
+              src="https://t.me/favicon.ico"
+              alt="Telegram icon"
+              width={16}
+              height={16}
+            />
+            Telegram
+          </a>
+          <a
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://x.com/OfficialMcTrump"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              aria-hidden
+              src="https://x.com/favicon.ico"
+              alt="Twitter icon"
+              width={16}
+              height={16}
+            />
+            Twitter
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+      </section>
+
+      {/* About Section */}
+      <section className="p-10 bg-gray-100 w-full rounded-lg shadow-md text-center">
+        <h2 className="text-4xl font-bold text-red-600">About McTrump On Base</h2>
+        <div className="mt-4 text-lg text-red-600">
+          <p>Welcome to the wild world of McTrump On Base, where fun meets finance!</p>
+          <p className="mt-2">Here at MTOB, we believe in making cryptocurrency exciting and rewarding for everyone. Our mission? To create a community that thrives on laughter, rewards, and a sprinkle of good ol' McDonald's magic!</p>
+        </div>
+        <h3 className="mt-4 text-2xl font-bold text-red-600">Why Choose MTOB?</h3>
+        <div className="mt-4">
+          <ul className="list-disc list-inside text-lg text-red-600">
+            <li>ETH Rewards: Enjoy 5% ETH rewards just for holding MTOB tokens!</li>
+            <li>Liquidity Lock: Our 1-year liquidity lock ensures your investment is safe and sound.</li>
+            <li>Community Driven: Join a vibrant community where your voice matters and fun is guaranteed!</li>
+            <li>Sustainability: We’re committed to creating a sustainable ecosystem that benefits everyone.</li>
+          </ul>
+        </div>
+        <div className="mt-4 text-lg text-red-600">
+          <p>So, what are you waiting for? Dive into the McTrump experience and let’s make crypto fun together!</p>
+          <p className="mt-2">Join us in our journey to revolutionize the cryptocurrency landscape, where every member is valued and every contribution counts. Together, we can build a future that is not only profitable but also enjoyable!</p>
+        </div>
+      </section>
+
+      {/* Tokenomics Section */}
+      <section className="p-10 bg-white w-full rounded-lg shadow-md text-center">
+        <h2 className="text-4xl font-bold text-red-600">Tokenomics</h2>
+        <ul className="mt-4 text-lg list-none">
+          <li className="mb-4 p-4 bg-yellow-400 rounded-lg shadow transition duration-300 hover:shadow-lg text-red-600">
+            Token Name: 
+            <div className="mt-1">McTrump On Base</div>
+          </li>
+          <li className="mb-4 p-4 bg-yellow-400 rounded-lg shadow transition duration-300 hover:shadow-lg text-red-600">
+            Ticker: 
+            <div className="mt-1">MTOB</div>
+          </li>
+          <li className="mb-4 p-4 bg-yellow-400 rounded-lg shadow transition duration-300 hover:shadow-lg text-red-600">
+            Total Supply: 
+            <div className="mt-1">1,000,000 Tokens</div>
+          </li>
+          <li className="mb-4 p-4 bg-yellow-400 rounded-lg shadow transition duration-300 hover:shadow-lg text-red-600">
+            ETH Rewards: 
+            <div className="mt-1">5% Tax ensures all holders receive ETH rewards.</div>
+          </li>
+          <li className="mb-4 p-4 bg-yellow-400 rounded-lg shadow transition duration-300 hover:shadow-lg text-red-600">
+            1-Year Liquidity Lock for investor protection.
+            <div className="mt-1"></div>
+          </li>
+        </ul>
+      </section>
+
+      {/* Partners Section */}
+      <section className="p-10 bg-gray-200 w-full rounded-lg shadow-md">
+        <h2 className="text-4xl font-bold text-center text-secondary-color">Our Partners</h2>
+        <p className="mt-4 text-lg text-center text-red-600">
+          We collaborate with various platforms to ensure the best experience for our community.
+        </p>
+        <div className="flex justify-center gap-4 mt-4">
+          <a href="https://gempad.app/" target="_blank" rel="noopener noreferrer">
+            <Image src="/gempad.png" alt="Gempad" width={150} height={150} />
+          </a>
+          <a href="https://dexscreener.com/" target="_blank" rel="noopener noreferrer">
+            <Image src="/dexscreener.png" alt="Dexscreener" width={150} height={150} />
+          </a>
+          <a href="https://www.dextools.io/app/" target="_blank" rel="noopener noreferrer">
+            <Image src="/dextools.png" alt="Dextools" width={150} height={150} />
+          </a>
+          <a href="https://basescan.org/" target="_blank" rel="noopener noreferrer">
+            <Image src="https://basescan.org/favicon.ico" alt="Basescan" width={150} height={150} />
+          </a>
+          <a href="https://coinmarketcap.com/" target="_blank" rel="noopener noreferrer">
+            <Image src="https://coinmarketcap.com/favicon.ico" alt="CoinMarketCap" width={150} height={150} />
+          </a>
+          <a href="https://www.coingecko.com/" target="_blank" rel="noopener noreferrer">
+            <Image src="https://www.coingecko.com/favicon.ico" alt="CoinGecko" width={150} height={150} />
+          </a>
+          
+        </div>
+      </section>
+
+      {/* Footer Section */}
+      <footer className="flex gap-6 flex-wrap items-center justify-center mt-10 bg-gray-800 text-white p-4 rounded-lg">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="mailto:info@mctrump.meme"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Image
             aria-hidden
             src="/file.svg"
-            alt="File icon"
+            alt="Email icon"
             width={16}
             height={16}
           />
-          Learn
+          Email Us
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://t.me/OfficialMcTrump"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Image
             aria-hidden
-            src="/window.svg"
-            alt="Window icon"
+            src="https://t.me/favicon.ico"
+            alt="Telegram icon"
             width={16}
             height={16}
           />
-          Examples
+          Telegram
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://x.com/OfficialMcTrump"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Image
             aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
+            src="https://x.com/favicon.ico"
+            alt="Twitter icon"
             width={16}
             height={16}
           />
-          Go to nextjs.org →
+          Twitter
         </a>
       </footer>
     </div>
