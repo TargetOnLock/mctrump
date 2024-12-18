@@ -183,7 +183,7 @@ export default function Home() {
             <Image src="/basescan.png" alt="Basescan" width={150} height={150} />
           </a>
           <a href="https://coinmarketcap.com/" target="_blank" rel="noopener noreferrer">
-            <Image src="https://coinmarketcap.com/favicon.ico" alt="CoinMarketCap" width={150} height={150} />
+            <Image src="/cmc.png" alt="CoinMarketCap" width={150} height={150} />
           </a>
           <a href="https://www.coingecko.com/" target="_blank" rel="noopener noreferrer">
             <Image src="https://www.coingecko.com/favicon.ico" alt="CoinGecko" width={150} height={150} />
