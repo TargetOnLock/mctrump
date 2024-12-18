@@ -117,6 +117,52 @@ export default function Home() {
         </ul>
       </section>
 
+      {/* How to Buy Section */}
+      <section className="p-10 bg-gray-200 w-full rounded-lg shadow-md text-center">
+        <h2 className="text-4xl font-bold text-secondary-color">How to Buy McTrump Tokens</h2>
+        <p className="mt-4 text-lg text-red-600">
+          Ready to join the McTrump revolution? Follow these simple steps to grab your MTOB tokens and start enjoying the fun!
+        </p>
+        
+        <div className="mt-6">
+          <h3 className="text-2xl font-bold text-red-600">Step 1: Get Your Wallet Ready</h3>
+          <p className="mt-2 text-lg text-red-600">
+            First, you need a wallet like <strong>MetaMask</strong>. If you don’t have it yet, download it and set it up!
+          </p>
+          <a href="https://metamask.io/" target="_blank" rel="noopener noreferrer">
+            <Image src="/metamask.png" alt="MetaMask" width={150} height={150} className="mx-auto mt-4" />
+          </a>
+        </div>
+
+        <div className="mt-6">
+          <h3 className="text-2xl font-bold text-red-600">Step 2: Head to Uniswap</h3>
+          <p className="mt-2 text-lg text-red-600">
+            Now that your wallet is ready, let’s hop over to <strong>Uniswap</strong> to make your purchase!
+          </p>
+          <a href="https://app.uniswap.org/" target="_blank" rel="noopener noreferrer">
+            <Image src="/uniswap.png" alt="Uniswap" width={150} height={150} className="mx-auto mt-4" />
+          </a>
+        </div>
+
+        <div className="mt-6">
+          <h3 className="text-2xl font-bold text-red-600">Step 3: Buy McTrump Tokens</h3>
+          <p className="mt-2 text-lg text-red-600">
+            On Uniswap, select the token you want to swap for MTOB. Use our contract address to find McTrump tokens:
+          </p>
+          <p className="mt-2 text-lg text-red-600 font-bold">Contract Address: <span className="text-secondary-color">[to be announced]</span></p>
+          <p className="mt-2 text-lg text-red-600">
+            Confirm your transaction and watch your McTrump tokens appear in your wallet!
+          </p>
+        </div>
+
+        <div className="mt-6">
+          <h3 className="text-2xl font-bold text-red-600">Step 4: Enjoy the Fun!</h3>
+          <p className="mt-2 text-lg text-red-600">
+            Congratulations! You’re now part of the McTrump community. Get ready for rewards, fun, and a whole lot of excitement!
+          </p>
+        </div>
+      </section>
+
       {/* Partners Section */}
       <section className="p-10 bg-gray-200 w-full rounded-lg shadow-md">
         <h2 className="text-4xl font-bold text-center text-secondary-color">Our Partners</h2>
@@ -144,6 +190,8 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      
 
       {/* Footer Section */}
       <footer className="flex gap-6 flex-wrap items-center justify-center mt-10 bg-gray-800 text-white p-4 rounded-lg">
