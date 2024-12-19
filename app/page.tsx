@@ -149,7 +149,7 @@ export default function Home() {
           <p className="mt-2 text-lg text-red-600">
             On Uniswap, select the token you want to swap for MTOB. Use our contract address to find McTrump tokens:
           </p>
-          <p className="mt-2 text-lg text-red-600 font-bold">Contract Address: <span className="text-secondary-color">[to be announced]</span></p>
+          <p className="mt-2 text-lg text-red-600 font-bold">Contract Address: <span className="text-secondary-color">[0x845e17f5116262dd5f82d9f289abfba982136799]</span></p>
           <p className="mt-2 text-lg text-red-600">
             Confirm your transaction and watch your McTrump tokens appear in your wallet!
           </p>
