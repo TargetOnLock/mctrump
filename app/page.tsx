@@ -173,19 +173,19 @@ export default function Home() {
           <a href="https://gempad.app/" target="_blank" rel="noopener noreferrer">
             <Image src="/gempad.png" alt="Gempad" width={150} height={150} />
           </a>
-          <a href="https://dexscreener.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://dexscreener.com/base/0x71f3109a84fa327953ac2f8e2512697af33008d7" target="_blank" rel="noopener noreferrer">
             <Image src="/dexscreener.png" alt="Dexscreener" width={150} height={150} />
           </a>
-          <a href="https://www.dextools.io/app/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.dextools.io/app/en/token/0x71f3109a84fa327953ac2f8e2512697af33008d7?t=1734617667603" target="_blank" rel="noopener noreferrer">
             <Image src="/dextools.png" alt="Dextools" width={150} height={150} />
           </a>
-          <a href="https://basescan.org/" target="_blank" rel="noopener noreferrer">
+          <a href="https://basescan.org/address/0x845e17f5116262DD5f82d9F289aBfba982136799" target="_blank" rel="noopener noreferrer">
             <Image src="/basescan.png" alt="Basescan" width={150} height={150} />
           </a>
-          <a href="https://coinmarketcap.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://coinmarketcap.com/dexscan/base/0x71f3109a84fa327953ac2f8e2512697af33008d7/" target="_blank" rel="noopener noreferrer">
             <Image src="/cmc.png" alt="CoinMarketCap" width={150} height={150} />
           </a>
-          <a href="https://www.coingecko.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.geckoterminal.com/base/pools/0x71f3109a84fa327953ac2f8e2512697af33008d7?utm_source=coingecko&utm_medium=referral&utm_campaign=searchresults" target="_blank" rel="noopener noreferrer">
             <Image src="https://www.coingecko.com/favicon.ico" alt="CoinGecko" width={150} height={150} />
           </a>
         </div>
